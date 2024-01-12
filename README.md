@@ -45,7 +45,7 @@ When you go that link you will need to authenticate yourself. Use your username 
 
 ![image](https://github.com/gptjozef/linkedin_automated_poster/assets/112521836/5dd7cc4f-6bc4-45e7-80e6-95e6a68bb995)
 
-The string code = CODE is your access code, save this, you will need this to post. Add it to the linkedin_token.json. These tokens last for 60 days, after 60 days you will need to grab a new token. You can also refresh tokens, see the following documentation on how to do that, for now I haven't gone donw that rabbit hole. https://learn.microsoft.com/en-us/linkedin/shared/authentication/programmatic-refresh-tokens
+These tokens last for 60 days, after 60 days you will need to grab a new token. You can also refresh tokens, see the following documentation on how to do that, for now I haven't gone donw that rabbit hole. https://learn.microsoft.com/en-us/linkedin/shared/authentication/programmatic-refresh-tokens
 
 Now notice all your scopes are going to be enabled on the auth tab. Make sure you have w_member_social enabled, or this won't work. 
 
@@ -53,12 +53,16 @@ Now notice all your scopes are going to be enabled on the auth tab. Make sure yo
 
 Okay now that we got all of that out the way we are ready to start launching some code. First you will need to provide your OpenAI api key to the .env file, you can do research on how to get one but its super easy.
 
-Next start the tokenid.py, command is pythong tokenid.py, click the link you are given and copy the code you receive in your url, paste it into your ide. This will get you your access token and your author id. That's it now you're ready to post. All you have to do from there is start the poster.py (python poster.py). I included two additional files, a scheduler.json and topics.json. You can adjust your scheduler, right now it works from EST 00:00-24:00. You can also edit your topics that your bot will talk about, I included examples from both and you should be able to derive the answers from either. If you need quick advice hit me up on X: [Twitter](https://twitter.com/gptjozef) That should be everything, thanks for following along!
+Next start the tokenid.py, command is pythong tokenid.py, click the link you are given and copy the code you receive in your url, paste it into your ide. This will get you your access token and your author id. That's it now you're ready to post. 
+
+All you have to do from there is start the poster.py (python poster.py). I included two additional files, a scheduler.json and topics.json. You can adjust your scheduler, right now it works from EST 00:00-24:00. You can also edit your topics that your bot will talk about, I included examples from both and you should be able to derive the answers from either. 
+
+If you need quick advice hit me up on X: [Twitter](https://twitter.com/gptjozef) That should be everything, thanks for following along!
 
 File Contents: 
 
-poster.py — This will take all the other files and do the heavy lifting.
-tokenid.py — This gets your access token and author id
-.env — This is where all your important codes and tokens are
-scheduler.json — This is where you will put how many posts you want to schedule 
-topics — This is where you can set the topics to post about on your linkedin
+* poster.py — This will take all the other files and do the heavy lifting.
+* tokenid.py — This gets your access token and author id
+* .env — This is where all your important codes and tokens are
+* scheduler.json — This is where you will put how many posts you want to schedule 
+* topics — This is where you can set the topics to post about on your linkedin
