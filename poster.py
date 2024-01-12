@@ -102,8 +102,8 @@ def setup_schedule():
         if function_name == 'post_to_linkedin':
             schedule.every().day.at(time).do(post_to_linkedin)
 
-            
-post_to_linkedin()
+# If you want to see if the bot works, remove the below # and it will post to linkedin as soon as you run the script.             
+#post_to_linkedin()
 
 
 # Main process
