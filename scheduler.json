@@ -1,0 +1,6 @@
+
+[
+    {"time": "08:00", "function": "post_to_linkedin"},
+    {"time": "12:00", "function": "post_to_linkedin"},
+    {"time": "16:00", "function": "post_to_linkedin"}
+]
