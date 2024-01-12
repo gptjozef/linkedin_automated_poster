@@ -13,7 +13,7 @@ The following dependencies:
 * schedule - pip install schedule
 * dotenv (for load_dotenv and set_key) - pip install python-dotenv
 
-First stage is setting up all the environment variables which you will need to get, if you need any assistance, watch the following video: (video coming soon)
+First stage is setting up all the environment variables which you will need to get, if you need any assistance, watch the following video: [Video](https://youtu.be/zeyNbxCkhIM)
 
 step one you are going to need to set up a linkedin dev account, simple, easy, and free to do:
 
